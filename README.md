@@ -96,6 +96,35 @@ Model performance results will be added after the complete notebook has been exe
 | F1-score | Pending evaluation |
 | Precision-recall AUC | Pending evaluation |
 
+## Model Evaluation Results
+
+The model was evaluated on a held-out test set containing 56,962 transactions, including 99 fraudulent transactions.
+
+| Metric | Legitimate | Fraud |
+|---|---:|---:|
+| Precision | 1.00 | 0.89 |
+| Recall | 1.00 | 0.79 |
+| F1-score | 1.00 | 0.83 |
+| Support | 56,863 | 99 |
+
+**Overall accuracy:** 1.00 (rounded to two decimal places)
+
+### Key Findings
+
+- The model achieved a fraud precision of 0.89.
+- Fraud recall was 0.79, indicating that some fraudulent transactions were missed.
+- The fraud F1-score was 0.83.
+- Accuracy alone is insufficient for evaluating this highly imbalanced classification problem.
+
+### Limitations and Next Steps
+
+- Review the confusion matrix to quantify false positives and missed fraud cases.
+- Evaluate precision-recall AUC and compare against a baseline model.
+- Investigate alternative decision thresholds using validation data.
+- Assess whether the model's performance remains stable across different transaction samples.
+
+These results are specific to the evaluated test set and do not establish real-world fraud detection performance.
+
 ## Limitations
 
 - The dataset represents a short historical period and may not reflect current fraud patterns.
