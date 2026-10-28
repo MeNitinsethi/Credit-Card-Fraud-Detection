@@ -148,6 +148,6 @@ This project is for educational and portfolio purposes only. It should not be us
 
 ## Author
 
-Machine Learning Portfolio Project
+Unwrapping_AI
 
 More projects will be added to the portfolio as they are completed and evaluated.
